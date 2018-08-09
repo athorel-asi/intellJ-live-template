@@ -1,0 +1,36 @@
+<templateSet group="Logs">
+  <template name="log" value="private static final org.slf4j.Logger LOGGER = org.slf4j.LoggerFactory.getLogger($CLASS_NAME$.class);" description="create logger" toReformat="true" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="logd" value="$LOGGER$.debug(&quot;$MESSAGE$&quot;$END$);" description="SLF4J debug log" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="LOGGER" expression="variableOfType(&quot;org.slf4j.Logger&quot;)" defaultValue="&quot;log&quot;" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="&quot;message&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="logi" value="$LOGGER$.info(&quot;$MESSAGE$&quot;$END$);" description="SLF4J info log" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="LOGGER" expression="variableOfType(&quot;org.slf4j.Logger&quot;)" defaultValue="&quot;log&quot;" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="&quot;message&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="logw" value="$LOGGER$.warn(&quot;$MESSAGE$&quot;$END$);" description="SLF4J warning log" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="LOGGER" expression="variableOfType(&quot;org.slf4j.Logger&quot;)" defaultValue="&quot;log&quot;" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="&quot;message&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="loge" value="$LOGGER$.error(&quot;$MESSAGE$&quot;$END$);" description="SLF4J error log" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="LOGGER" expression="variableOfType(&quot;org.slf4j.Logger&quot;)" defaultValue="&quot;log&quot;" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="&quot;message&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

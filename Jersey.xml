@@ -1,0 +1,39 @@
+<templateSet group="Jersey">
+  <template name="jget" value="@javax.ws.rs.GET&#10;@javax.ws.rs.Path(&quot;$PATH$&quot;)&#10;public $RETURN$ $NAME$($PARAMS$) {&#10;    return $VALUE$;$END$&#10;}" description="JAX-RS &quot;get&quot; method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="PATH" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
+    <variable name="RETURN" expression="complete()" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="jpost" value="@javax.ws.rs.POST&#10;@javax.ws.rs.Path(&quot;$PATH$&quot;)&#10;public $RETURN$ $NAME$($PARAMS$) {&#10;    $END$&#10;}" description="JAX-RS &quot;post&quot; method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="PATH" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
+    <variable name="RETURN" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="jput" value="@javax.ws.rs.PUT&#10;@javax.ws.rs.Path(&quot;$PATH$&quot;)&#10;public $RETURN$ $NAME$($PARAMS$) {&#10;    $END$&#10;}" description="JAX-RS &quot;put&quot; method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="PATH" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
+    <variable name="RETURN" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="jdel" value="@javax.ws.rs.DELETE&#10;@javax.ws.rs.Path(&quot;$PATH$&quot;)&#10;public $RETURN$ $NAME$($PARAMS$) {&#10;    $END$&#10;}" description="JAX-RS &quot;delete&quot; method" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="PATH" expression="" defaultValue="&quot;/&quot;" alwaysStopAt="true" />
+    <variable name="RETURN" expression="" defaultValue="&quot;void&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+</templateSet>

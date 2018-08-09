@@ -1,0 +1,23 @@
+<templateSet group="Spring">
+  <template name="injc" value="@javax.inject.Inject&#10;private $TYPE$ $NAME$;" description="Inject Spring component into field" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TYPE" expression="annotated(&quot;org.springframework.stereotype.Component&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="injr" value="@javax.inject.Inject&#10;private $TYPE$ $NAME$;" description="Inject Spring repository into field" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TYPE" expression="annotated(&quot;org.springframework.stereotype.Repository&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="inj" value="@javax.inject.Inject&#10;private $TYPE$ $NAME$;" description="Inject object into field" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TYPE" expression="complete()" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+</templateSet>

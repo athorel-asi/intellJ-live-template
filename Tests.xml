@@ -1,0 +1,40 @@
+<templateSet group="Tests">
+  <template name="ae" value="org.assertj.core.api.Assertions.assertThat($GIVEN$).isEqualTo($EXPECTED$);" description="assert equal" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="GIVEN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPECTED" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="an" value="org.assertj.core.api.Assertions.assertThat($GIVEN$).isNull();" description="assert null" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="GIVEN" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ann" value="org.assertj.core.api.Assertions.assertThat($GIVEN$).isNotNull();" description="assert not null" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="GIVEN" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="test" value="@org.junit.Test&#10;public void should$NAME$() {&#10;    $TEST_CODE$&#10; }" description="jUnit test method" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEST_CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="at" value="org.assertj.core.api.Assertions.assertThat($GIVEN$).isTrue();" description="assert true" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="GIVEN" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="af" value="org.assertj.core.api.Assertions.assertThat($GIVEN$).isFalse();" description="assert false" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="GIVEN" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
